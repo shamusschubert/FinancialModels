@@ -44,6 +44,7 @@
     <Compile Include="Expense.cs" />
     <Compile Include="FinancialModel.cs" />
     <Compile Include="IAsset.cs" />
+    <Compile Include="IBalanceSheet.cs" />
     <Compile Include="IExpense.cs" />
     <Compile Include="IFinancialModel.cs" />
     <Compile Include="ILiability.cs" />
