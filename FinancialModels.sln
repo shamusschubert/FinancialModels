@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialModels", "FinancialModels\FinancialModels.csproj", "{E7972D14-F85F-4B70-8681-684C6837706E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialModels.UnitTests", "FinancialModels.UnitTests\FinancialModels.UnitTests.csproj", "{7FCD43D2-90B8-4593-A690-FB386E54C809}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7972D14-F85F-4B70-8681-684C6837706E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7972D14-F85F-4B70-8681-684C6837706E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7972D14-F85F-4B70-8681-684C6837706E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7972D14-F85F-4B70-8681-684C6837706E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FCD43D2-90B8-4593-A690-FB386E54C809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FCD43D2-90B8-4593-A690-FB386E54C809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FCD43D2-90B8-4593-A690-FB386E54C809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FCD43D2-90B8-4593-A690-FB386E54C809}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
