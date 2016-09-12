@@ -12,21 +12,17 @@ namespace FinancialModels
         {
             FinancialModel model = new FinancialModel();
 
+            model.AddAsset(new Asset { Amount = 500 });
+            model.AddAsset(new Asset { Amount = 600 });
+            model.AddAsset(new Asset { Amount = 700 });
+            model.AddAsset(new Asset { Amount = 800 });
+            model.AddAsset(new Asset { Amount = 900 });
 
-            List<Asset> assets = new List<Asset>();
-
-            model.Assets = assets;
-
-
-            foreach(var asset in model.Assets)
-            {
-                Console.WriteLine(asset.Amount);
-            }
-
-            foreach (var lib in model.Liabilities)
-            {
-                Console.WriteLine(lib.Amount);
-            }
+            model.AddLiability(new Liability { Amount = 400 });
+            model.AddLiability(new Liability { Amount = 500 });
+            model.AddLiability(new Liability { Amount = 600 });
+            model.AddLiability(new Liability { Amount = 700 });
+            model.AddLiability(new Liability { Amount = 800 });
 
         }
     }

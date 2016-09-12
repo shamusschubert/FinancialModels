@@ -16,23 +16,7 @@ namespace FinancialModels
 
         public FinancialModel()
         {
-            _assets = new List<IAsset>();
-            _assets.Add(new Asset { Amount = 100 });
-            _assets.Add(new Asset { Amount = 100 });
-            _assets.Add(new Asset { Amount = 100 });
-            _assets.Add(new Asset { Amount = 100 });
-            _assets.Add(new Asset { Amount = 100 });
-            _assets.Add(new Asset { Amount = 100 });
-            _assets.Add(new Asset { Amount = 100 });
 
-            _liabilties = new List<ILiability>();
-            _liabilties.Add(new Liability { Amount=   90 });
-            _liabilties.Add(new Liability { Amount = 90 });
-            _liabilties.Add(new Liability { Amount = 90 });
-            _liabilties.Add(new Liability { Amount = 90 });
-            _liabilties.Add(new Liability { Amount = 90 });
-            _liabilties.Add(new Liability { Amount = 90 });
-            _liabilties.Add(new Liability { Amount = 90 });
         }
 
         public IEnumerable<IAsset> Assets
@@ -81,6 +65,26 @@ namespace FinancialModels
             {
                 _revenues = value.ToList();
             }
+        }
+
+        public void AddAsset(IAsset Asset)
+        {
+            this._assets.Add(Asset);
+        }
+
+        public void AddExpense(IExpense Expense)
+        {
+            this._expenses.Add(Expense);
+        }
+
+        public void AddLiability(ILiability Liability)
+        {
+            this._liabilties.Add(Liability);
+        }
+
+        public void AddRevenue(IRevenue Revenue)
+        {
+            this._revenues.Add(Revenue);
         }
     }
 }
