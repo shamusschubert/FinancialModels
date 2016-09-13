@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Linq;
+using System.Linq.Expressions;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FinancialModels.UnitTests
@@ -27,6 +30,10 @@ namespace FinancialModels.UnitTests
             model.AddLiability(new Liability { Amount = 800 });
 
             model.AddExpense(new Expense { Amount = 500, TimePeriod = new TimePeriod { Quarter = "Q1", Year = 2017 } });
+            model.AddExpense(new Expense { Amount = 500, TimePeriod = new TimePeriod { Quarter = "Q1", Year = 2017 } });
+            model.AddExpense(new Expense { Amount = 500, TimePeriod = new TimePeriod { Quarter = "Q1", Year = 2017 } });
+            model.AddExpense(new Expense { Amount = 500, TimePeriod = new TimePeriod { Quarter = "Q1", Year = 2017 } });
+
             model.AddRevenue(new Revenue { Amount = 600, TimePeriod = new TimePeriod { Quarter = "Q1", Year = 2017 } });
 
             IBalanceSheet sheet = new BalanceSheet();
@@ -36,6 +43,7 @@ namespace FinancialModels.UnitTests
             var liabilities = sheet.TotalLiabilities(model);
 
 
+            var expenses_2017 = model.Expenses.Where(m => m.TimePeriod.Year == 2017).Sum(m => m.Amount);
 
 
             IRevenue rev = new Revenue();
