@@ -8,6 +8,8 @@ namespace FinancialModels
 {
     public interface IFinancialModel
     {
+        IInstrument Instrument { get; set; }
+
         IEnumerable<IExpense> Expenses { get; set; }
         IEnumerable<IRevenue> Revenue { get; set; }
         IEnumerable<IAsset> Assets { get; set; }
