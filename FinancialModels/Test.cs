@@ -28,6 +28,8 @@ namespace FinancialModels
             IBalanceSheet sheet = new BalanceSheet();
 
             var netWorth = sheet.NetWorth(model);
+            var assets = sheet.TotalAssets(model);
+            var liabilities = sheet.TotalLiabilities(model);
         }
     }
 }

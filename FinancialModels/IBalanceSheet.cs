@@ -8,6 +8,8 @@ namespace FinancialModels
 {
     public interface IBalanceSheet
     {
+        double TotalAssets(IFinancialModel Model);
+        double TotalLiabilities(IFinancialModel Model);
         double NetWorth(IFinancialModel Model);
     }
 }

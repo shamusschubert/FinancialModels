@@ -10,7 +10,17 @@ namespace FinancialModels
     {
         public double NetWorth(IFinancialModel Model)
         {
-            return (Model.Assets.Sum(m => m.Amount) - Model.Assets.Sum(m => m.Amount));
+            return (Model.Assets.Sum(m => m.Amount) - Model.Liabilities.Sum(m => m.Amount));
+        }
+
+        public double TotalAssets(IFinancialModel Model)
+        {
+            return (Model.Assets.Sum(m => m.Amount));
+        }
+
+        public double TotalLiabilities(IFinancialModel Model)
+        {
+            return (Model.Liabilities.Sum(m => m.Amount));
         }
     }
 }
