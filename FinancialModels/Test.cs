@@ -24,6 +24,10 @@ namespace FinancialModels
             model.AddLiability(new Liability { Amount = 700 });
             model.AddLiability(new Liability { Amount = 800 });
 
+
+            IBalanceSheet sheet = new BalanceSheet();
+
+            var netWorth = sheet.NetWorth(model);
         }
     }
 }
