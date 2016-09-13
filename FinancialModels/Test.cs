@@ -24,6 +24,8 @@ namespace FinancialModels
             model.AddLiability(new Liability { Amount = 700 });
             model.AddLiability(new Liability { Amount = 800 });
 
+            model.AddExpense(new Expense { Amount = 500, TimePeriod = new TimePeriod { Quarter = "Q1", Year = 2017 } });
+            model.AddRevenue(new Revenue { Amount = 600, TimePeriod = new TimePeriod { Quarter = "Q1", Year = 2017 } });
 
             IBalanceSheet sheet = new BalanceSheet();
 

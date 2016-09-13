@@ -13,10 +13,13 @@ namespace FinancialModels
         private List<IMetric> _metrics;
         private IInstrument _instrument;
 
-
         public FinancialModel()
         {
-
+            _assets = new List<IAsset>();
+            _expenses = new List<IExpense>();
+            _liabilties = new List<ILiability>();
+            _revenues = new List<IRevenue>();
+            _metrics = new List<IMetric>();
         }
 
         public IEnumerable<IAsset> Assets

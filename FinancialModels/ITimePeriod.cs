@@ -8,5 +8,7 @@ namespace FinancialModels
 {
     public interface ITimePeriod
     {
+        int Year { get; set; }
+        string Quarter { get; set; }
     }
 }
