@@ -11,5 +11,6 @@ namespace FinancialModels
         string Symbol { get; set; }
         string Name { get; set; }
         string CUSIP { get; set; }
+        int SharesOutstanding { get; set; }
     }
 }
