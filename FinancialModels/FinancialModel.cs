@@ -11,6 +11,7 @@ namespace FinancialModels
         private List<ILiability> _liabilties;
         private List<IRevenue> _revenues;
         private List<IMetric> _metrics;
+        private IInstrument _instrument;
 
 
         public FinancialModel()
@@ -46,12 +47,11 @@ namespace FinancialModels
         {
             get
             {
-                throw new NotImplementedException();
+                return _instrument;
             }
-
             set
             {
-                throw new NotImplementedException();
+                _instrument = value;
             }
         }
 
@@ -115,6 +115,31 @@ namespace FinancialModels
         public void AddMetric(IMetric Metric)
         {
             this._metrics.Add(Metric);
+        }
+
+        public void RemoveExpense(IExpense Expense)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RemoveRevenue(IRevenue Revenue)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RemoveAsset(IAsset Asset)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RemoveLiability(ILiability Liability)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RemoveMetric(IMetric Metric)
+        {
+            throw new NotImplementedException();
         }
     }
 }

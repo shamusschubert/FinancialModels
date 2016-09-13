@@ -17,10 +17,18 @@ namespace FinancialModels
 
         IEnumerable<IMetric> Metrics { get; set; }  // non financial measures such as stores or customers
 
+        //
         void AddExpense(IExpense Expense);
         void AddRevenue(IRevenue Revenue);
         void AddAsset(IAsset Asset);
         void AddLiability(ILiability Liability);
         void AddMetric(IMetric Metric);
+        //
+        void RemoveExpense(IExpense Expense);
+        void RemoveRevenue(IRevenue Revenue);
+        void RemoveAsset(IAsset Asset);
+        void RemoveLiability(ILiability Liability);
+        void RemoveMetric(IMetric Metric);
+
     }
 }
