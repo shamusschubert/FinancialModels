@@ -10,6 +10,7 @@ namespace FinancialModels
     {
         private double _amount;
         private ITimePeriod _timePeriod;
+        private string _nothing;
 
         public double Amount
         {
