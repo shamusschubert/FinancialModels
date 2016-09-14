@@ -8,6 +8,7 @@ namespace FinancialModels
 {
     public interface IExpense
     {
+        //Test  
         ITimePeriod TimePeriod { get; set; }
         double Amount { get; set; }
     }
